@@ -1,0 +1,130 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/my playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "E:/my playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/day15th.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 0,
+      "threshold": 600001
+    },
+    "configFile": "E:\\my playwright\\playwright.config.ts",
+    "rootDir": "E:/my playwright",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.30.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\day15th.ts",
+      "file": "tests/day15th.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "go for only one tab first ",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30000,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\my playwright\\tests\\day15th.ts",
+                        "column": 16,
+                        "line": 21
+                      },
+                      "message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\", waiting until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39mtests\\day15th.ts:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m test\u001b[33m.\u001b[39monly(\u001b[32m'go for only one tab first '\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page})\u001b[33m=>\u001b[39m{\u001b[90m// ask tufail why its showing only one  retrieved here but you can find another one in trace \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.lambdatest.com/selenium-playground/window-popup-modal-demo'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     console\u001b[33m.\u001b[39mlog(page\u001b[33m.\u001b[39murl())\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m     \u001b[36mconst\u001b[39m [newPage]\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([ \u001b[90m// all the promises should be resolved before diving in next \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m         page\u001b[33m.\u001b[39mwaitForEvent(\u001b[32m'popup'\u001b[39m)\u001b[33m,\u001b[39m\u001b[0m\n\n\u001b[2m    at E:\\my playwright\\tests\\day15th.ts:21:16\u001b[22m"
+                    },
+                    {
+                      "message": "Pending operations:\n  - page.goto at tests\\day15th.ts:21:16\n"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-02-09T19:15:43.713Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\my playwright\\test-results\\tests-day15th.ts-go-for-only-one-tab-first-\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3710561f2f4ad04fc3af-26e5240422d7b6869e31",
+          "file": "tests/day15th.ts",
+          "line": 20,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
